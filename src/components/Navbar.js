@@ -13,7 +13,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import resumePDF from "../Assets/RESUME_Pattarin_Maneesakprasert.pdf"
 
-function NavBar() {
+function NavBar({}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -27,9 +27,9 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
-  const handleContactClick = () => {
-    window.location.href = "mailto:pattarin.sine.m@gmail.com";
-  };
+  // const handleContactClick = () => {
+  //   // window.location.href = "mailto:<email>";
+  // };
 
   const handleResumeClick = () => {
     const link = document.createElement("a");
@@ -78,11 +78,15 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link onClick={handleContactClick}>
-                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
+            {/* <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/home/Home2"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
