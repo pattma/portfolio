@@ -19,10 +19,10 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={fitbook}
-              isBlog={false}
+              // isBlog={false}
               title="FitBook"
               description="Fitbook is the activity tracker web application is designed for busy people who want to keep track of their physical activities but don't have much time to do the activities"
-              ghLink="https://github.com/warutniy/frontend_groupA-2"
+              // ghLink="https://github.com/warutniy/frontend_groupA-2"
               demoLink="https://frontend-group-a-2.vercel.app/"
             />
           </Col>
